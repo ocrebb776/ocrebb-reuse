@@ -1,5 +1,5 @@
 # cookies-internal-
+##
+ setCookie(cookiename, cooke value, days till expire)
 ## 
-#setCookie(cookiename, cooke value, days till expire)
-## 
-#getCookie(cookiename) 
+ getCookie(cookiename) 
