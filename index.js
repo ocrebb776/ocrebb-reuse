@@ -19,3 +19,20 @@ function getCookie(cname) {
   }
   return "";
 }
+function changeid(locaLId,localvalue){
+  document.getElementById(locaLId).innerHTML = localvalue
+}
+function tell(LocalValue){
+  alert(LocalValue);
+}
+function ask(LocalValue){
+  return prompt(LocalValue)
+}
+function conf(LocalValue){
+  return confirm(LocalValue)
+}
+function split(LocalValue){
+  return LocalValue.split('')
+}
+function logc(LocalValue){console.log(LocalValue)}
+
