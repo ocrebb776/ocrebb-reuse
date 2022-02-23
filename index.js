@@ -36,3 +36,21 @@ function split(LocalValue){
 }
 function logc(LocalValue){console.log(LocalValue)}
 
+function ascii(letter){
+  return letter.charCodeAt(0)
+}
+function toascii(code){
+  return String.fromCharCode(Number(code))
+}
+
+function revs(str) {
+    var splitString = str.split("")
+    var reverseArray = splitString.reverse()
+    var joinArray = reverseArray.join("")
+    return joinArray
+}
+function scramble(number,LocalValue){
+  let j = LocalValue.length
+   LocalValue += LocalValue[number -1]
+    logc(LocalValue[number]+String(number-j+j**2)+LocalValue[number*2]+LocalValue[j-number]+revs(LocalValue)+LocalValue[0]+LocalValue[2]+LocalValue[number+1].toUpperCase()+String(number)+String(ascii(LocalValue[1])+12*number)+toascii(number+j)+toascii(number+33)+toascii(number+number+32+j))
+}
