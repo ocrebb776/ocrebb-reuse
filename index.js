@@ -64,3 +64,6 @@ function setCookie(cname, cvalue, exdays) {
         ghjr  = change(ghjr,'undefined','WereYoMaMMA@t')
         return ghjr
       }
+function formvalue(fname,name){
+     return document.forms[fname][name].value
+}
