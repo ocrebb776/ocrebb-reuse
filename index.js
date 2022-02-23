@@ -49,8 +49,16 @@ function revs(str) {
     var joinArray = reverseArray.join("")
     return joinArray
 }
-function scramble(number,LocalValue){
-  let j = LocalValue.length
-   LocalValue += LocalValue[number -1]
-    return LocalValue[number]+String(number-j+j**2)+LocalValue[number*2]+LocalValue[j-number]+revs(LocalValue)+LocalValue[0]+LocalValue[2]+LocalValue[number+1].toUpperCase()+String(number)+String(ascii(LocalValue[1])+12*number)+toascii(number+j)+toascii(number+33)+toascii(number+number+32+j)
+function change(string,from,to){
+  return string.replace(from,to)
 }
+function scramble(number,LocalValue){
+  let jasflihsaui = LocalValue.length
+    var ghjr = LocalValue[number]+String(number-jasflihsaui+jasflihsaui**2)+LocalValue[number*2]+LocalValue[jasflihsaui-number]+revs(LocalValue)+LocalValue[0]+LocalValue[2]+LocalValue[number+1].toUpperCase()+String(number)+String(ascii(LocalValue[1])+12*number)+toascii(number+jasflihsaui+31)+toascii(number+33)+toascii(number+number+32+jasflihsaui)
+  ghjr  = change(ghjr,'+','#')
+  ghjr  = change(ghjr,'`','H')
+  ghjr  = change(ghjr,'|','R')
+  ghjr  = change(ghjr,'undefined','')
+  return ghjr
+}
+logc(scramble(2,'osdf'))
