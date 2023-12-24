@@ -28,7 +28,7 @@ function tell(LocalValue) {
 function ask(LocalValue) {
   return prompt(LocalValue)
 }
-function conf(LocalValue) {
+function confi(LocalValue) {
   return confirm(LocalValue)
 }
 function split(LocalValue) {
